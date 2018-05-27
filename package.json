@@ -1,0 +1,40 @@
+{
+  "name": "ws-product-manager",
+  "version": "1.0.0",
+  "description": "Managing the products of a company is very important.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=ws-product-manager nodemon app.js",
+    "lint": "eslint app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandhyalalkumar/ws-product-manager.git"
+  },
+  "author": "Sandhyalal Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandhyalalkumar/ws-product-manager/issues"
+  },
+  "homepage": "https://github.com/sandhyalalkumar/ws-product-manager#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "config": "^1.30.0",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.2",
+    "morgan": "^1.9.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": 2500,
+    "env": {
+      "PORT": 9002,
+      "NODE_ENV": "development"
+    }
+  }
+}
